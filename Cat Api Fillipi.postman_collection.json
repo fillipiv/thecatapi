@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "a1fc2ee3-ddc6-4f24-9509-0c9b64933988",
+		"name": "Cat Api Fillipi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET listar raças",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/breeds/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"breeds",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET detalhar raça",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/breeds/lookup/sibe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"breeds",
+						"lookup",
+						"sibe"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "sibe",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET listar raças por temperamento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/breeds/temperament/intelligent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"breeds",
+						"temperament",
+						"intelligent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET listar raças por origem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/breeds/origin/Egypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"breeds",
+						"origin",
+						"Egypt"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
